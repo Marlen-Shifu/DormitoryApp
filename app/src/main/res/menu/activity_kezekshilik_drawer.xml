@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_kundik_kezek"
+            android:icon="@drawable/user"
+            android:title="Күндік кезекшілік" />
+        <item
+            android:id="@+id/nav_keshigip"
+            android:icon="@drawable/timer"
+            android:title="Кешігіп келгендер" />
+        <item
+            android:id="@+id/nav_kelmegen"
+            android:icon="@drawable/to_do_list"
+            android:title="Мүлдем келмегендер" />
+
+        <item
+            android:id="@+id/nav_jazalanushilar"
+            android:icon="@drawable/report"
+            android:title="Жазаланушылар" />
+
+        <item
+            android:id="@+id/nav_juma_kezek"
+            android:icon="@drawable/bell"
+            android:title="Жұма күнгі кезекшілік" />
+
+        <item
+            android:id="@+id/nav_apta_koritindi"
+            android:icon="@drawable/calendar"
+            android:title="Апталық қорытынды" />
+
+    </group>
+</menu>

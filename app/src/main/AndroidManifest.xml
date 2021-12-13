@@ -30,6 +30,11 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.DormitoryApp.NoActionBar">
         </activity>
+        <activity
+            android:name=".kezekshilik.KezekshilikActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DormitoryApp.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

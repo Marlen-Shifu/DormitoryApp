@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dormitoryapp.documentation.DocumentationActivity;
+import com.example.dormitoryapp.kezekshilik.KezekshilikActivity;
 
 public class ProfilePageActivity extends AppCompatActivity {
 
@@ -36,7 +37,7 @@ public class ProfilePageActivity extends AppCompatActivity {
         btnKezekshilik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), DocumentationActivity.class);
+                Intent i = new Intent(v.getContext(), KezekshilikActivity.class);
                 startActivity(i);
             }
         });

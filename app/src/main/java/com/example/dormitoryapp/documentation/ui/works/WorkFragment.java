@@ -16,19 +16,19 @@ import com.example.dormitoryapp.databinding.FragmentWorksBinding;
 
 public class WorkFragment extends Fragment {
 
-    private WorkViewModel galleryViewModel;
+    private WorkViewModel workViewModel;
     private FragmentWorksBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
+        workViewModel =
                 new ViewModelProvider(this).get(WorkViewModel.class);
 
         binding = FragmentWorksBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        workViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

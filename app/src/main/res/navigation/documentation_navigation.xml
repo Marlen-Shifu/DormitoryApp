@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/nav_habar"
-        android:name="com.example.dormitoryapp.documentation.ui.nus.NusFragment"
+        android:name="com.example.dormitoryapp.documentation.ui.habar.HabarFragment"
         android:label="Хабарландыру"
         tools:layout="@layout/fragment_habar" />
 
     <fragment
         android:id="@+id/nav_shagym"
-        android:name="com.example.dormitoryapp.documentation.ui.nus.NusFragment"
+        android:name="com.example.dormitoryapp.documentation.ui.shagym.ShagymFragment"
         android:label="Шағымдар"
         tools:layout="@layout/fragment_shagym" />
 </navigation>

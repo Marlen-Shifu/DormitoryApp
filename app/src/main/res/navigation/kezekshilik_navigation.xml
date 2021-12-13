@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kezekshilik_navigation"
+    app:startDestination="@+id/nav_kundik_kezek">
+
+    <fragment
+        android:id="@+id/nav_kundik_kezek"
+        android:name="com.example.dormitoryapp.kezekshilik.ui.kundik_kezek.KundikKezekFragment"
+        android:label="Күндік кезекшілік"
+        tools:layout="@layout/fragment_kundik_kezek" />
+
+    <fragment
+        android:id="@+id/nav_keshigip"
+        android:name="com.example.dormitoryapp.kezekshilik.ui.keshigip.KeshigipFragment"
+        android:label="Кешігіп келгендер"
+        tools:layout="@layout/fragment_keshigip" />
+
+    <fragment
+        android:id="@+id/nav_kelmegen"
+        android:name="com.example.dormitoryapp.kezekshilik.ui.kelmegen.KelmegenFragment"
+        android:label="Мүлдем келмегендер"
+        tools:layout="@layout/fragment_kelmegen" />
+
+    <fragment
+        android:id="@+id/nav_jazalanushilar"
+        android:name="com.example.dormitoryapp.kezekshilik.ui.jazalanushilar.JazalanushilarFragment"
+        android:label="Жазаланушылар"
+        tools:layout="@layout/fragment_jazalanushilar" />
+
+    <fragment
+        android:id="@+id/nav_juma_kezek"
+        android:name="com.example.dormitoryapp.kezekshilik.ui.juma_kezek.JumaKezekFragment"
+        android:label="Жұма күнгі кезекшілік"
+        tools:layout="@layout/fragment_juma_kezek" />
+
+    <fragment
+        android:id="@+id/nav_apta_koritindi"
+        android:name="com.example.dormitoryapp.kezekshilik.ui.apta_koritindi.AptaKoritindiFragment"
+        android:label="Апталық қорытынды"
+        tools:layout="@layout/fragment_apta_koritindi" />
+
+</navigation>

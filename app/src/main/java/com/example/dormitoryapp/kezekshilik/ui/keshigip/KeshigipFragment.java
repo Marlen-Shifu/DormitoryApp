@@ -1,4 +1,4 @@
-package com.example.dormitoryapp.documentation.ui.lessons;
+package com.example.dormitoryapp.kezekshilik.ui.keshigip;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,23 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.dormitoryapp.databinding.FragmentLessonsBinding;
+import com.example.dormitoryapp.databinding.FragmentKundikKezekBinding;
 
-public class LessonFragment extends Fragment {
+public class KeshigipFragment extends Fragment {
 
-    private LessonViewModel lessonViewModel;
-    private FragmentLessonsBinding binding;
+    private KeshigipViewModel homeViewModel;
+    private FragmentKundikKezekBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        lessonViewModel =
-                new ViewModelProvider(this).get(LessonViewModel.class);
+        homeViewModel =
+                new ViewModelProvider(this).get(KeshigipViewModel.class);
 
-        binding = FragmentLessonsBinding.inflate(inflater, container, false);
+        binding = FragmentKundikKezekBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
-        lessonViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

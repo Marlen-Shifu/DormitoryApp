@@ -1,4 +1,4 @@
-package com.example.dormitoryapp.documentation;
+package com.example.dormitoryapp.kezekshilik;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,19 +11,19 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.dormitoryapp.R;
-import com.example.dormitoryapp.databinding.ActivityDocumentationBinding;
+import com.example.dormitoryapp.databinding.ActivityKezekshilikBinding;
 import com.google.android.material.navigation.NavigationView;
 
-public class DocumentationActivity extends AppCompatActivity {
+public class KezekshilikActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityDocumentationBinding binding;
+    private ActivityKezekshilikBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityDocumentationBinding.inflate(getLayoutInflater());
+        binding = ActivityKezekshilikBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
@@ -34,7 +34,7 @@ public class DocumentationActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_lessons, R.id.nav_works, R.id.nav_nus, R.id.nav_habar, R.id.nav_shagym)
+                R.id.nav_kundik_kezek, R.id.nav_keshigip, R.id.nav_kelmegen, R.id.nav_jazalanushilar, R.id.nav_juma_kezek, R.id.nav_apta_koritindi)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

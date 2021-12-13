@@ -16,19 +16,19 @@ import com.example.dormitoryapp.databinding.FragmentNusBinding;
 
 public class NusFragment extends Fragment {
 
-    private NusViewModel slideshowViewModel;
+    private NusViewModel nusViewModel;
     private FragmentNusBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
+        nusViewModel =
                 new ViewModelProvider(this).get(NusViewModel.class);
 
         binding = FragmentNusBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        nusViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
