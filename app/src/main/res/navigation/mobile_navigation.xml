@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_lessons">
+
+    <fragment
+        android:id="@+id/nav_lessons"
+        android:name="com.example.dormitoryapp.documentation.ui.lessons.LessonFragment"
+        android:label="Сабақтар"
+        tools:layout="@layout/fragment_lessons" />
+
+    <fragment
+        android:id="@+id/nav_works"
+        android:name="com.example.dormitoryapp.documentation.ui.works.WorkFragment"
+        android:label="Жұмыстар"
+        tools:layout="@layout/fragment_works" />
+
+    <fragment
+        android:id="@+id/nav_nus"
+        android:name="com.example.dormitoryapp.documentation.ui.nus.NusFragment"
+        android:label="Нұсқаулар"
+        tools:layout="@layout/fragment_nus" />
+
+    <fragment
+        android:id="@+id/nav_habar"
+        android:name="com.example.dormitoryapp.documentation.ui.nus.NusFragment"
+        android:label="Хабарландыру"
+        tools:layout="@layout/fragment_habar" />
+
+    <fragment
+        android:id="@+id/nav_shagym"
+        android:name="com.example.dormitoryapp.documentation.ui.nus.NusFragment"
+        android:label="Шағымдар"
+        tools:layout="@layout/fragment_shagym" />
+</navigation>

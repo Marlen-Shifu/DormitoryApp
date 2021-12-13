@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_lessons"
+            android:icon="@drawable/user"
+            android:title="Менің сабақтарым" />
+        <item
+            android:id="@+id/nav_works"
+            android:icon="@drawable/to_do_list"
+            android:title="Жұмыстар" />
+        <item
+            android:id="@+id/nav_nus"
+            android:icon="@drawable/timer"
+            android:title="Нұсқаулар" />
+
+        <item
+            android:id="@+id/nav_habar"
+            android:icon="@drawable/bell"
+            android:title="Хабарландыру" />
+
+        <item
+            android:id="@+id/nav_shagym"
+            android:icon="@drawable/report"
+            android:title="Шағымдар" />
+
+    </group>
+</menu>
