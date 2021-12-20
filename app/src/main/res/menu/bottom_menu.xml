@@ -4,17 +4,17 @@
     <item
         android:id="@+id/home"
         android:title="Жаңа"
-        android:icon="@drawable/wrench"/>
+        android:icon="@drawable/new_window"/>
 
     <item
         android:id="@+id/about"
         android:title="Тексеріс"
-        android:icon="@drawable/image"/>
+        android:icon="@drawable/bookmark"/>
 
 
     <item
         android:id="@+id/settings"
         android:title="Біткен"
-        android:icon="@drawable/paint"/>
+        android:icon="@drawable/check"/>
 
 </menu>

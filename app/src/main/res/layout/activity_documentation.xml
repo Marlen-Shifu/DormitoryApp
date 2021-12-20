@@ -24,7 +24,31 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_documentation_drawer"
         app:itemTextColor="#fff"
-        app:itemIconTint="#fff" />
+        app:itemIconTint="#fff" >
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/return_"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_sing_in"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:text="Назад"
+                android:backgroundTint="#049092"
+                android:textColor="#B8B8B8"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
